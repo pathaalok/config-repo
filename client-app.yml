@@ -3,4 +3,4 @@ spring:
     name: client-app
 
 example:
-  greeting: "Hello from client-app default config1"
+  greeting: "Hello from client-app default config2"
