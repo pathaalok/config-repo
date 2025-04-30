@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: client-app
+
+example:
+  greeting: "Hello from client-app default config"
