@@ -5,5 +5,6 @@ rules:
     "[US|LOB1|DEAL|1||Al1RCCUS]": Al1RCCUS  # Already exists, no action taken
   inv_ref_id_rccRule: #COUNTRY|INV_REF
     "[US|123]": AlRCC
+    "[US|143]": Al1RCC # New entry added
   non_regulated_inv_ref_id_rccRule: #COUNTRY|INV_REF
     "[143]": Al1RCC1  # Already exists, no action taken
