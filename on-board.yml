@@ -3,7 +3,10 @@ Test:
     - 123
     - acct/sor1
     - acct/sor2
+    - acct/sor5
+    - acct/sor7
   DEAL:
     - 456
     - deal/sor3
     - deal/sor4
+    - deal/sor6
