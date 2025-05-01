@@ -1,9 +1,9 @@
 rules:
   non_regulated_rccRule: #COUNTRY|LOB|TYPE|DOC_CAT|DOC_TYPE
     "[US|LOB1|ACCT|11|11]": AlRCC
-    "[US|LOB1|ACCT|1|12|AlRCCUS]": AlRCCUS
-    "[US|LOB1|DEAL|1||Al1RCCUS]": Al1RCCUS
+    "[US|LOB1|ACCT|1|12|AlRCCUS]": AlRCCUS  # Already exists, no action taken
+    "[US|LOB1|DEAL|1||Al1RCCUS]": Al1RCCUS  # Already exists, no action taken
   inv_ref_id_rccRule: #COUNTRY|INV_REF
     "[US|123]": AlRCC
   non_regulated_inv_ref_id_rccRule: #COUNTRY|INV_REF
-    "[143]": Al1RCC1
+    "[143]": Al1RCC1  # Already exists, no action taken
