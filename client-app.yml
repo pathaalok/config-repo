@@ -4,3 +4,4 @@ spring:
 
 example:
   greeting: "Hello from client-app default config3"
+  greeting1: "Test"
