@@ -6,4 +6,4 @@ rules:
   inv_ref_id_rccRule: #COUNTRY|INV_REF
     "[US|123]": AlRCC
   non_regulated_inv_ref_id_rccRule: #COUNTRY|INV_REF
-    "[143]": Al1RCC
+    "[143]": Al1RCC1
