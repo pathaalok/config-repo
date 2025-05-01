@@ -2,6 +2,8 @@ Test:
   Acct:
     - 123
     - sor1
+    - sor2
   DEAL:
     - 456
     - sor3
+    - sor2
