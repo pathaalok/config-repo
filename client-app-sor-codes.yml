@@ -1,5 +1,7 @@
 sor-codes:
   Acct:
     - 123
+    - sor1
   DEAL:
     - 456
+    - sor2
