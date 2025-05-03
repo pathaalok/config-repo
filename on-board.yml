@@ -4,9 +4,9 @@ Test:
     - sor1
     - sor2
     - acct/sor7
+    - Acct/sor1
   DEAL:
     - 456
     - sor3
     - sor2
     - acct/sor7
-    - Acct/sor1
