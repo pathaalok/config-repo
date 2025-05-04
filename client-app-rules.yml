@@ -1,7 +1,25 @@
 rules:
   non_regulated_rccRule: #COUNTRY|LOB|TYPE|DOC_CAT|DOC_TYPE
     "[US|LOB1|ACCT|11|11]": RCC1
+    "[CN|LOB1|ACCT|1|12]": AlRCC
+    "[US|LOB1|DEAL|1|null]": Al1RCC
+    "[US|null|null|null|143]": Al1RCC
+
   inv_ref_id_rccRule: #COUNTRY|INV_REF
     "[US|123]": RCC2
+
   non_regulated_inv_ref_id_rccRule: #COUNTRY|INV_REF
     "[US|123]": RCC3
+
+partitions:
+  P0: Federated
+  P1: non Regulated
+  P2: non Regulated
+  P3: non Regulated
+  P4: non Regulated
+  
+eligible_sor_codes:
+  - ACCT/SOR1
+  - DEAL/SOR2
+
+bus_unit: WF
