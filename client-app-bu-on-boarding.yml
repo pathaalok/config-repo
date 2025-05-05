@@ -16,6 +16,7 @@ busUnitOnBoardingCongif:
   WF:
     contentRepoRef:
       - P2_OS1
+      - P2_OS1 # Added based on input Q1 & Q3
     dispositionConfig:
       enableDeleteNotification: false
       enableCaseNOtification: false
