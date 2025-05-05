@@ -1,15 +1,35 @@
 busUnitOnBoardingCongif:
-    WHFL:
-        contentRepoRef:
-            - P2_0S1
-        dispositionConfig:
-            enableDeleteNotification: false
-            enableCaseNOtification: false
-            notificationRecipts: abc@test.com
-        SamplingConfig:
-            - ruleRef: AUTO_APPROVE
-              sampling:
-                id: INV_REF
-                values:
-                    - 123
-                    - 234
+  WHFL:
+    contentRepoRef:
+      - P2_0S1
+    dispositionConfig:
+      enableDeleteNotification: false
+      enableCaseNOtification: false
+      notificationRecipts: abc@test.com
+    SamplingConfig:
+      - ruleRef: AUTO_APPROVE
+        sampling:
+          id: INV_REF
+          values:
+            - 123
+            - 234
+      - ruleRef:  #Added new SamplingConfig since Q5 is empty
+        sampling:
+          id: INV_REF_ID
+          values:
+            - 123
+            - 678
+  WF:
+    contentRepoRef:
+      - P2_OS1  #Assuming OS1 as default OS.  Should ideally be provided in input.
+    dispositionConfig:
+      enableDeleteNotification: false # P2 is Non-Regulated
+      enableCaseNOtification: false  # P2 is Non-Regulated
+      notificationRecipts: abc@test.com
+    SamplingConfig:
+      - ruleRef: AUTO_APPROVE #Since Q5 is empty, defaulting to AUTO_APPROVE for Non-Regulated partition.
+        sampling:
+          id: INV_REF_ID
+          values:
+            - 123
+            - 678
