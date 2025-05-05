@@ -1,11 +1,4 @@
 busUnitOnBoardingCongif:
-    WF:
-        contentRepoRef:
-            - P1_0S1
-        dispositionConfig:
-            enableDeleteNotification: false
-            enableCaseNOtification: false
-            notificationRecipts: abc@test.com
     WHFL:
         contentRepoRef:
             - P2_0S1
@@ -20,4 +13,3 @@ busUnitOnBoardingCongif:
                 values:
                     - 123
                     - 234
-                    - 456
