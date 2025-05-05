@@ -16,6 +16,7 @@ busUnitOnBoardingCongif:
   WF:
     contentRepoRef:
       - P2_OS1
+      - P2_OS1 #Added based on input
     dispositionConfig:
       enableDeleteNotification: false
       enableCaseNOtification: false
@@ -25,3 +26,7 @@ busUnitOnBoardingCongif:
         sampling:
           id: null
           values: []
+      - ruleRef: AUTO_APPROVE # Added since no Sampling Rule Ref provided
+        sampling: 
+          id: null # Added since no Sampling Id provided
+          values: [] # Added since no Sampling data provided
