@@ -1,5 +1,34 @@
 sor-codes:
   Acct:
     - 123
+    - SOR2
   DEAL:
     - 456
+    - SOR3
+
+INPUT DATA : 
+
+Q1: Partition
+A1: P2
+
+Q2: Eligible SOR Codes (Example: ACCT/SOR,DEAL/SOR)
+A2: ACCT/SOR2,DEAL/SOR3
+
+Q3: BUS UNIT
+A3: WF
+
+Q4: RCC RULES
+A4: COUNTRY,LOB,TYPE,DOC_CAT,DOC_TYPE,INV_REF,RCC
+CN,LOB1,ACCT,1,12,AlRCC 
+US,LOB1,DEAL,1,,Al1RCC 
+US,,,,143,Al1RCC
+
+Q5: Sampling Rule Ref
+A5: 
+
+Q6: Sampling Id
+A6: INV_REF_ID
+
+Q7: Sampling Data
+A7: 123
+678
