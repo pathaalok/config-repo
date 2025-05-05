@@ -1,7 +1,24 @@
+Partions:
+  P0: Federated
+  P1: non Regulated
+  P2: non Regulated
+  P3: non Regulated
+  P4: non Regulated
+  P5: Regulated
+
+Rule Types:
+  non_regulated_rccRule: when Partition is non Regulated and #COUNTRY|LOB|TYPE|DOC_CAT|DOC_TYPE have data from "RCC RULES" INPUT DATA
+  inv_ref_id_rccRule: when Partition is Regulated and #COUNTRY|INV_REF have data from "RCC RULES" INPUT DATA
+  non_regulated_inv_ref_id_rccRule: when Partition is non Regulated and #COUNTRY|INV_REF have data from "RCC RULES" from INPUT DATA
+
+
 rules:
   non_regulated_rccRule: #COUNTRY|LOB|TYPE|DOC_CAT|DOC_TYPE
     "[US|LOB1|ACCT|11|11]": RCC1
+    "[US|LOB1|DEAL|1|]": Al1RCC
+    "[CN|LOB1|ACCT|1|12]": AlRCC
   inv_ref_id_rccRule: #COUNTRY|INV_REF
     "[US|123]": RCC2
   non_regulated_inv_ref_id_rccRule: #COUNTRY|INV_REF
     "[US|123]": RCC3
+    "[US|678]": ""
