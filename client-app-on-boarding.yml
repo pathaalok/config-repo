@@ -1,0 +1,8 @@
+busUnitOnBoardingCongif:
+    WF:
+        contentRepoRef:
+            - P1_0S1
+        dispositionConfig:
+            enableDeleteNotification: false
+            enableCaseNOtification: true
+            notificationRecipts: abc@test.com
