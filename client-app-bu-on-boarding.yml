@@ -29,7 +29,7 @@ busUnitOnBoardingCongif:
     awd:
         contentRepoRef:
             - P2_OS1
-            - P2_OS1 # Added based on input
+            - P2_OS1
         dispositionConfig:
             enableDeleteNotification: false
             enableCaseNOtification: false
@@ -40,8 +40,27 @@ busUnitOnBoardingCongif:
                 id: asd
                 values:
                     - aad
+            - ruleRef: asd
+              sampling:
+                id: asd
+                values:
+                    - aad
             - ruleRef: asd # Added based on input
               sampling:
                 id: asd #Added based on input
                 values:
                     - aad #Added based on input
+
+    sdasda: # New entry created based on input
+        contentRepoRef:
+            - P2_OS1 #Based on input A2
+        dispositionConfig:
+            enableDeleteNotification: false # P2 is Non-Regulated
+            enableCaseNOtification: false # P2 is Non-Regulated
+            notificationRecipts: abc@test.com 
+        SamplingConfig:
+            - ruleRef: asd #Based on input A6
+              sampling:
+                id: asd #Based on input A7
+                values:
+                    - aad #Based on input A8
