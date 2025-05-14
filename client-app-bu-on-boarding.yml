@@ -13,3 +13,16 @@ busUnitOnBoardingCongif:
                 values:
                     - 123
                     - 234
+    ad:
+        contentRepoRef:
+            - P2_OS1
+        dispositionConfig:
+            enableDeleteNotification: false
+            enableCaseNOtification: false
+            notificationRecipts: abc@test.com
+        SamplingConfig:
+            - ruleRef: asdasd
+              sampling:
+                id: asdad
+                values:
+                    - da
