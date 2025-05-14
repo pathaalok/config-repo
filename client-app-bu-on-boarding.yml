@@ -1,15 +1,29 @@
 busUnitOnBoardingCongif:
-    WHFL:
-        contentRepoRef:
-            - P2_0S1
-        dispositionConfig:
-            enableDeleteNotification: false
-            enableCaseNOtification: false
-            notificationRecipts: abc@test.com
-        SamplingConfig:
-            - ruleRef: AUTO_APPROVE
-              sampling:
-                id: INV_REF
-                values:
-                    - 123
-                    - 234
+  WHFL:
+    contentRepoRef:
+      - P2_0S1
+    dispositionConfig:
+      enableDeleteNotification: false
+      enableCaseNOtification: false
+      notificationRecipts: abc@test.com
+    SamplingConfig:
+      - ruleRef: AUTO_APPROVE
+        sampling:
+          id: INV_REF
+          values:
+            - 123
+            - 234
+  WF:
+    contentRepoRef:
+      - P2_OS1
+    dispositionConfig:
+      enableDeleteNotification: false
+      enableCaseNOtification: false
+      notificationRecipts: abc@test.com
+    SamplingConfig:
+      - ruleRef: AUTO_APPROVE
+        sampling:
+          id: 123
+          values:
+            - 123
+            - 456
