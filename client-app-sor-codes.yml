@@ -1,5 +1,7 @@
 sor-codes:
   Acct:
     - 123
+    - 123 # Added from input
   DEAL:
     - 456
+    - 123 # Added from input
